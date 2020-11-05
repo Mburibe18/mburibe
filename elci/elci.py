@@ -13,3 +13,5 @@ for x in range(Fs*t):
             dat = 0
         print(dat)
 
+df=pd.DataFrame( signal, columns=['Amplitude'])
+

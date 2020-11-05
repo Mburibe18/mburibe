@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP| Characters</title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/personajes.css')}}">
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <h2>tu ip es {{userIp}}:</h2>
+    <h2>Tu personaje es : {{personaje}}</h2>
+    <img src="{{url_for('static', filename= 'images/goku.jpg')}}" alt="Goku">
+    <img src= "{{url_for('static', filename= 'images/schumacher.jpg')}}" alt="Schumacher">
+    <img src= "{{url_for('static', filename= 'images/negra.jpg')}}" alt="mi negra">
+    <img src= "{{url_for('static', filename= 'images/beckham.jpg')}}" alt="crack">
+    <img src= "{{url_for('static', filename= 'images/burger.jpg')}}" alt="burger">
+    <a href="personajes">Vamos a la ruta personajes</a></h2>
+    ><a href="home">Regresa al home</a>
+</body>
+</html>

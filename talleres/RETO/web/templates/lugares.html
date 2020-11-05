@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP| places </title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/lugares.css')}}">
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <h2>tu ip es {{userIp}}:</h2>
+    <h2>Tu lugar es : {{lugar}}</h2>
+    <img src="{{url_for('static', filename= 'images/pan.jpg')}}" alt="top lugares favoritos">
+    <img src="{{url_for('static', filename= 'images/cr.jpg')}}" alt="top lugares favoritos">
+    <img src="{{url_for('static', filename= 'images/caño.jpg')}}" alt="top lugares favoritos">
+    <img src="{{url_for('static', filename= 'images/mon.jpg')}}" alt="top lugares favoritos">
+    <img src="{{url_for('static', filename= 'images/athens.jpg')}}" alt="top lugares favoritos">
+    <a href="lugares">Vamos a la ruta lugares</a>
+    ><a href="home">Regresa al home</a>
+
+</body>
+</html>
