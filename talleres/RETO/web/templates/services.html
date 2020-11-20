@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP| Characters</title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/services.css')}}">
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <h2>tu ip es {{userIp}}:</h2>
+    <h2>Tu services es : {{services}}</h2>
+    <h2>servicio #1 : atención al cliente</h2>
+    <img src="{{url_for('static', filename= 'images/ate.jpg')}}" alt="atencion al cliente">
+    <h2>servicio #2 : pruebas de sangre</h2>
+    <img src= "{{url_for('static', filename= 'images/prueba sangre.jpg')}}" alt="pruebas de sangre">
+    <h2>servicio #3 : ecografía</h2>
+    <img src= "{{url_for('static', filename= 'images/eco.jpg')}}" alt="ecografía">
+    <h2>servicio #4 : electrocardiograma</h2>
+    <img src= "{{url_for('static', filename= 'images/ele.jpg)}}" alt="electrocardiogramas">
+    <h2>servicio #% : expirometria</h2>
+    <img src= "{{url_for('static', filename= 'images/exp.jpg')}}" alt="expirometrias">
+    <a href="services">Vamos a la ruta services</a></h2>
+    ><a href="inicio">Regresa al inicio</a>
+</body>
+</html>

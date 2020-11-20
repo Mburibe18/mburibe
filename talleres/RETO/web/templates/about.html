@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP| Characters</title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/about.css')}}">
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <h2>tu ip es {{userIp}}:</h2>
+    <h2>Tu about es : {{about}}</h2>
+    <h2>La clínica se fundo en el año 2002 , cuenta con un gran reconocimiento a nivel local , esta acreditada por
+        el gobierno Colombiano, cuenta con sedes a lo largo de todo el país, en nuestra institución se prestan diferentes
+        tipos de servicios , los cuales se explicaran en la pestaña de services.
+    </h2>
+    <img src="{{url_for('static', filename= 'images/service.jpg')}}" alt="service">
+    <a href="about">Vamos a la ruta about</a></h2>
+    ><a href="inicio">Regresa al inicio</a>
+</body>
+</html>
