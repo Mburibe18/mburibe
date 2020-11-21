@@ -22,6 +22,7 @@ def validatePassword (diccionario, userIn, passwordIn):
     return salida
 
 def saveUser (originalDict, nombreArchivo, user , psw) :
+    print(originalDict, originalDict['user'])
     listaNombres = list (originalDict['user'].values())
     listaNombres.append(user)
     listaPsw =  list (originalDict['pass'].values())

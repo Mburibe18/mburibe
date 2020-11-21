@@ -48,6 +48,7 @@ def home():
 
 @app.route('/login', methods = ['POST','GET'])
 def login():
+    data = helper.leerArchivo(fileNameCredential)
     if request.method == 'POST':
         nameUser = request.form['name']
         passUser = request.form ['pass']
@@ -74,6 +75,10 @@ def singin():
         return redirect(url_for('success'))
     else: 
         return render_template('signIn.html')
+
+@app.route('/success', methods= ['GET'])
+def success():
+    return render_template('success.html')
 
 
     
